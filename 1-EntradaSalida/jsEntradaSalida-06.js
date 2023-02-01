@@ -16,7 +16,7 @@ function sumar()
 
 	numUno = parseInt (numUnoTexto);
 	numDos = parseInt (numDosTexto);
-	mensaje = "La suma es " + numUno + numDos;
+	mensaje = "La suma es " + (numUno + numDos);
 
 	alert(mensaje);
 }
