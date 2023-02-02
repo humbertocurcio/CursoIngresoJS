@@ -16,17 +16,23 @@ c) El modulo de los numeros (el primero en modulo del segundo)
 function SacarResto()
 {
 	
-	let numDividendo
-	let numDivisor
-	let mensaje
+	let num1
+	let num2
+	let mensaje1
+	let mensaje2
+	let mensaje3
 
-	numDividendo = document.getElementById ("txtIdNumeroDividendo").value;
-	numDivisor = document.getElementById ("txtIdNumeroDivisor").value;
+	num1 = document.getElementById ("txtIdNumeroDividendo").value;
+	num2 = document.getElementById ("txtIdNumeroDivisor").value;
 
-	numDividendo = parseInt (numDividendo);
-	numDivisor = parseInt (numDivisor);
+	num1 = parseInt (num1);
+	num2 = parseInt (num2);
 	
-	mensaje = "El resto es " + numDividendo % numDivisor;
-
-	alert(mensaje);
+	mensaje1 = "La suma es " + (num1 + num2);
+	mensaje2 = "El promedio es " + (num1 + num2)/2;
+	mensaje3 = "el modulo es " + num1 % num2;
+	
+	alert(mensaje1);
+	alert(mensaje2);
+	alert (mensaje3);
 }
