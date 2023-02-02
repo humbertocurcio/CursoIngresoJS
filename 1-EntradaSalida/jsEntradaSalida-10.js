@@ -16,16 +16,15 @@ function mostrarAumento()
 	let porcentaje 
 	let nuevoImporte
 	let porcentajeAModificar
-
-	porcentajeAModificar = 25
+	
 
 	importe = document.getElementById ("txtIdImporte").value;
 
 	importe = parseFloat (importe);
 
-	porcentaje = importe -  porcentajeAModificar;
+	porcentajeAModificar = prompt ("asigne un porcentaje");
 
-	nuevoImporte = importe - porcentajeAModificar;
+	 nuevoImporte = importe - porcentajeAModificar;
 
 	document.getElementById ("txtIdResultado").value = nuevoImporte; 
 	
