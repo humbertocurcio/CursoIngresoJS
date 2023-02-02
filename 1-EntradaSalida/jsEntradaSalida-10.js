@@ -13,16 +13,19 @@ pedirle al usuario un % de descuento y mostrar el importe en el cuadro de texto 
 function mostrarAumento()
 {
 	let importe
-	let descuento 
+	let porcentaje 
 	let nuevoImporte
+	let porcentajeAModificar
+
+	porcentajeAModificar = 25
 
 	importe = document.getElementById ("txtIdImporte").value;
 
 	importe = parseFloat (importe);
 
-	descuento = importe * (25 / 100);
+	porcentaje = importe -  porcentajeAModificar;
 
-	nuevoImporte = importe - descuento;
+	nuevoImporte = importe - porcentajeAModificar;
 
 	document.getElementById ("txtIdResultado").value = nuevoImporte; 
 	
