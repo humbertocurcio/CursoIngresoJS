@@ -69,5 +69,5 @@ function PrecioFinal ()
 
     mensaje =  "El precio final mas IVA (21%) es " + precioFinalDos;
 
-    alert(mensaje);
+    alert(mensaje); 
 }
