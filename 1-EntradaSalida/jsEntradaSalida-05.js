@@ -25,6 +25,6 @@ function mostrar()
 	mensaje ="Sr. " + apellido + ", usted se llama " + mostrarNombre + " y tiene " + mostrarEdad + " años";
 
 
-	alert(mensaje);
+	alert(mensaje); 
 }
 
