@@ -24,7 +24,7 @@ function mostrarAumento()
 
 	nuevoImporte = importe - descuento;
 
-	document.getElementById ("txtIdResultado").value = nuevoImporte;
+	document.getElementById ("txtIdResultado").value = nuevoImporte; 
 	
 
 	
