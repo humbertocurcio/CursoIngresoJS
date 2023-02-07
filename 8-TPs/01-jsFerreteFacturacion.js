@@ -5,19 +5,19 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-    let precioUno
-    let precioDos
-    let precioTres
-    let suma
+    let precioUno;
+    let precioDos;
+    let precioTres;
+    let suma;
 
-    precioUno = document.getElementById ("txtIdPrecioUno").value;
-    precioUno = parseFloat (precioUno);
+    precioUno = document.getElementById("txtIdPrecioUno").value;
+    precioUno = parseFloat(precioUno);
 
-    precioDos = document.getElementById ("txtIdPrecioDos").value;
-    precioDos = parseFloat (precioDos);
+    precioDos = document.getElementById("txtIdPrecioDos").value;
+    precioDos = parseFloat(precioDos);
 
-    precioTres = document. getElementById ("txtIdPrecioTres").value;
-    precioTres = parseFloat (precioTres);
+    precioTres = document. getElementById("txtIdPrecioTres").value;
+    precioTres = parseFloat(precioTres);
 
     suma = "La suma de precios es " + (precioUno + precioDos + precioTres);
     
@@ -26,34 +26,38 @@ function Sumar ()
 }
 function Promedio () 
 {
-    let precioUno
-    let precioDos
-    let precioTres
-    let promedio
+    let precioUno;
+    let precioDos;
+    let precioTres;
+    let mensajePromedio;
+    let promedio;
 
-    precioUno = document.getElementById ("txtIdPrecioUno").value;
-    precioUno = parseFloat (precioUno);
+    precioUno = document.getElementById("txtIdPrecioUno").value;
+    precioUno = parseFloat(precioUno);
 
-    precioDos = document.getElementById ("txtIdPrecioDos").value;
-    precioDos = parseFloat (precioDos);
+    precioDos = document.getElementById("txtIdPrecioDos").value;
+    precioDos = parseFloat(precioDos);
 
-    precioTres = document. getElementById ("txtIdPrecioTres").value;
-    precioTres = parseFloat (precioTres);
+    precioTres = document. getElementById("txtIdPrecioTres").value;
+    precioTres = parseFloat(precioTres);
 
-    promedio = "el promedio de los precios es " + (precioUno + precioDos + precioTres)/3;
+    promedio = (precioUno + precioDos + precioTres)/3;
 
-    alert(promedio);
+    mensajePromedio = "el promedio de los precios es " + promedio.toFixed(2);
+
+    alert(mensajePromedio);
 
 	
 }
 function PrecioFinal () 
 {
-	let precioUno
-    let precioDos
-    let precioTres
-    let precioFinalUno
-    let precioFinalDos
-    let precioFinalConIVA
+	let precioUno;
+    let precioDos;
+    let precioTres;
+    let precioFinalUno;
+    let precioFinalDos;
+    let txtPrecioFinalConIVA;
+    const IVA = 21;
 
     precioUno = document.getElementById ("txtIdPrecioUno").value;
     precioUno = parseFloat (precioUno);
@@ -64,10 +68,10 @@ function PrecioFinal ()
     precioTres = document. getElementById ("txtIdPrecioTres").value;
     precioTres = parseFloat (precioTres);
 
-    precioFinalUno = (precioUno + precioDos + precioTres);
-    precioFinalDos = precioFinalUno + precioFinalUno * 0.21;
+    precioFinalUno = precioUno + precioDos + precioTres;
+    precioFinalDos = precioFinalUno + precioFinalUno * (IVA/100);
 
-    precioFinalConIVA =  "El precio final mas IVA (21%) es " + precioFinalDos;
+    txtPrecioFinalConIVA =  "El precio final mas IVA " + (IVA) + "% es "  + precioFinalDos;
 
-    alert(precioFinalConIVA); 
+    alert(txtPrecioFinalConIVA); 
 }
