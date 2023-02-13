@@ -14,11 +14,12 @@ function mostrar()
 		case "Septiembre":
 		case "Noviembre":
 			alert("tiene 30 dias");
+		break;
 		default:
 			alert("tiene 31 dias");
 	}
 	
-	// enero, marzo, mayo, julio, agosto, octubre, diciembre
+	
 
 
 
