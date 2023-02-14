@@ -20,4 +20,5 @@ function mostrar()
 			mensaje = "està al sur";
 			break;
 	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN
