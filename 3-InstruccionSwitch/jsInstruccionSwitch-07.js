@@ -13,7 +13,7 @@ function mostrar()
 		case "Cataratas":
 			mensaje = "està al norte";
 			break;
-		case "Mar del Plata":
+		case "Mar del plata":
 			mensaje = "està al este";
 			break;
 		case "Ushuaia":
