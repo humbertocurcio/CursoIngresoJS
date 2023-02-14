@@ -17,7 +17,7 @@ function mostrar()
 			mensaje = "Hace calor";
 			break;
 	}
-	alert(mensaje);
+	alert(mensaje); 
 		
 
 }//FIN DE LA FUNCIÓN
