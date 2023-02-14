@@ -1,6 +1,9 @@
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	let destino;
+
+	destino = document.getElementById("txtIdDestino").value;
+
+	
 
 }//FIN DE LA FUNCIÓN
