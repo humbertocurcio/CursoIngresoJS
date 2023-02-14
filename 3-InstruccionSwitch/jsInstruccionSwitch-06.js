@@ -21,6 +21,7 @@ function mostrar()
 		alert("Esa no es una hora valida");
 	}
 	document.getElementById("txtIdHora").value = "";
+	
 
 		
 	
