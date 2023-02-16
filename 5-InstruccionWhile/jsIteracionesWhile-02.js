@@ -8,7 +8,6 @@ function mostrar()
 
 	while(i > 0)
 	{
-		
 		alert("mostrar " + i);
 		i = i - 1
 	}
