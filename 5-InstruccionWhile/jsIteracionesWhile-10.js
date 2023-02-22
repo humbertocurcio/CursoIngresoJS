@@ -58,25 +58,15 @@ function mostrar()
 
 	diferenciaPosNeg = contadorPositivos - contadorNegativos;
 
-	document.write("La suma de negativos es " + acumuladorNegativos); 
-	document.write("La suma de positivos es " + acumuladorPositivos); 
-	document.write("La cantidad de positivos es " + contadorPositivos); 
-	document.write("La cantidad de negativos es " + contadorNegativos);
-	document.write("La cantidad de ceros es " + contadorCeros); 
-	document.write("La cantidad de numeros pares " + contadorPares); 
-	document.write("El promedio de los positivos es  " + promPositivos); 
-	document.write("El promedio de los negativos es " + promNegativos); 
-	document.write("La diferencia entre positivos y negativos es  " + diferenciaPosNeg);
-
-
-
-	
-
-
-
-
-
-
-	
+	document.write(
+		"La suma de negativos es " + acumuladorNegativos + "<br>" + 
+		"La suma de positivos es " + acumuladorPositivos + "<br>" +
+		"La cantidad de positivos es " + contadorPositivos + "<br>" +
+		"La cantidad de negativos es " + contadorNegativos + "<br>" +
+		"La cantidad de ceros es " + contadorCeros + "<br>" +
+		"La cantidad de numeros pares " + contadorPares + "<br>" +
+		"El promedio de los positivos es  " + promPositivos + "<br>" +
+		"El promedio de los negativos es " + promNegativos + "<br>" +
+		"La diferencia entre positivos y negativos es  " + diferenciaPosNeg);
 
 }//FIN DE LA FUNCIÓN
