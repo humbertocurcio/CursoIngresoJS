@@ -25,5 +25,8 @@ function mostrar()
 		respuesta=prompt("desea continuar?");
 	}//fin del while
 
+
+
+	//"<br>" salto de linea
 	document.write("la suma de negativos es :"+sumaNegativos);
 }//FIN DE LA FUNCIÓN
