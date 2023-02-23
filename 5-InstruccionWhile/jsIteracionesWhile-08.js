@@ -3,17 +3,18 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar()
 {
-	let contNegativos;
+	
 	let numeroIngresado;
 	let sumaPositivos;
 	let mulNegativos;
 	let respuesta;
+	let flag;
 
 	
 	sumaPositivos = 0;
 	mulNegativos = 1;
-	contNegativos = 0;
 	respuesta = `s`;
+	flag = true;
 	
 	while(respuesta == `s`)
 	{
@@ -24,13 +25,13 @@ function mostrar()
 			sumaPositivos += numeroIngresado;
 		}else
 		{
-			contNegativos ++;
+			flag = false;
 			mulNegativos *= numeroIngresado;
 		}
 		
 		respuesta = prompt("desea ingresar otro nùmero s/n?");
 	}
-	if(contNegativos == 0)
+	if(flag == true)
 	{
 		mulNegativos = 0;
 	}
