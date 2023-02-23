@@ -7,19 +7,33 @@ function mostrar()
 	let minimo;
 	let numero;
 	let respuesta;
-	let contador;
+	let flag;
 
 	contador = 0;
-	respuesta = `s`;
+	respuesta = 's';
+	flag = true;
 
-	while(respuesta == `s`)
+	
+
+	while(respuesta == 's')
 	{
 		numero = parseFloat(prompt("Ingrese un nùmero; "));
-		if(contador == 0)
+
+		if(flag == true || numero > maximo)
+		{
+			maximo = numero;
+		}
+		if(flag == true || numero < minimo)
+		{
+			minimo = numero;
+			flag = false;
+		}	
+
+		/*if(flag == true)
 		{
 			maximo = numero;
 			minimo = numero;
-			contador = 1;
+			flag = false;
 		}
 		if(numero > maximo)
 		{
@@ -28,7 +42,7 @@ function mostrar()
 		else if(numero < minimo)
 		{
 			minimo = numero;
-		}
+		}*/
 		
 
 		respuesta = prompt("desea ingresar otro nùmero? s/n");
