@@ -23,10 +23,10 @@ function mostrar()
 	let contadorPares = 0;
 	let acumuladorPositivos = 0;
 	let acumuladorNegativos = 0;
-	let respuesta = `s`;
+	let respuesta = 's';
 
 
-	while(respuesta == `s`)
+	while(respuesta == 's')
 	{
 		numero = parseFloat(prompt("ingrese un nùmero: "));
 
