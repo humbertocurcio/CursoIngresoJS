@@ -14,8 +14,8 @@ function mostrar()
 {
 
 	let numero;
-	let promPositivos;
-	let promNegativos;
+	let promPositivos = 0;
+	let promNegativos = 0;
 	let diferenciaPosNeg;
 	let contadorPositivos = 0;
 	let contadorNegativos = 0;
@@ -30,32 +30,36 @@ function mostrar()
 	{
 		numero = parseFloat(prompt("ingrese un nùmero: "));
 
-		if(numero > 0)
+		if(numero == 0)
 		{
-			acumuladorPositivos += numero;
-			contadorPositivos ++;
+			contadorCeros++;
 
-		}else if(numero == 0)
+		}else if(numero < 0)
 		{
-			contadorCeros ++;
-
-		}else
-		{
-			acumuladorNegativos += numero;
-			contadorNegativos ++;
+			acumuladorNegativos+= numero;
+			contadorNegativos++;
 		}
+		else
+		{
+			acumuladorPositivos+= numero;
+			contadorPositivos++;
+		}
+		
 		if(numero % 2 == 0)
 		{
-			contadorPares ++;
+			contadorPares++;
 		}
 
 		respuesta = prompt("desea ingresar otro nùmero? ");
 	}
-
-	promPositivos = acumuladorPositivos / contadorPositivos;
-
-	promNegativos = acumuladorNegativos / contadorNegativos;
-
+	if(contadorPositivos > 0)
+	{
+		promPositivos = acumuladorPositivos / contadorPositivos;
+	}
+	if(contadorNegativos > 0)
+	{
+		promNegativos = acumuladorNegativos / contadorNegativos;
+	}
 	diferenciaPosNeg = contadorPositivos - contadorNegativos;
 
 	document.write(
